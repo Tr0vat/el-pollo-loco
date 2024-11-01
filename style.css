@@ -1,0 +1,345 @@
+@font-face {
+    font-family: 'zabras';
+    src: url('fonts/zabars.ttf') format('truetype');
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    min-height: 100vh;
+    margin: 0;
+    background-image: url('img/5_background/layers/air.png');
+    background-size: cover;
+    font-family: 'zabras', Arial, Helvetica, sans-serif;
+}
+
+h1,h2{
+    font-size: 64px;
+    letter-spacing: 3px;
+    text-shadow: 1px 0px 1px #CCCCCC, 0px 1px 1px #EEEEEE, 2px 1px 1px #CCCCCC, 1px 2px 1px #EEEEEE, 3px 2px 1px #CCCCCC, 2px 3px 1px #EEEEEE, 4px 3px 1px #CCCCCC, 3px 4px 1px #EEEEEE, 5px 4px 1px #CCCCCC, 4px 5px 1px #EEEEEE, 6px 5px 1px #CCCCCC, 5px 6px 1px #EEEEEE, 7px 6px 1px #CCCCCC;
+    color: rgba(128, 32, 0, 0.8);
+}
+
+h2{
+    margin-left: 100px;
+}
+
+.d-none{
+    display: none !important;
+}
+
+.d-block{
+    display: block !important;
+}
+
+.start-screen{
+    width: 720px;
+    height: 500px;
+    background-image: url('img/9_intro_outro_screens/start/startscreen_1.png');
+    background-repeat: no-repeat;
+    background-size: contain;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.navi{
+    display: flex;
+    flex-direction: column;
+    bottom: 0;
+    position: absolute;
+    justify-content: center;
+}
+
+.game-container {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    display: none;
+}
+
+.btn-container{
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: space-between;
+    padding: 10px;
+    box-sizing: border-box;
+    display: none;
+}
+
+.btn-container-top{
+    position: absolute;
+    top: 0;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    justify-content: flex-end;
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.btns-top{
+    display: flex;
+}
+
+.btn{
+    font-family: 'zabras';
+    font-size: 32px;
+    letter-spacing: 2px;
+    border: 2px solid rgba(128, 32, 0, 0.8);
+    color: rgba(128, 32, 0, 0.8);
+    text-shadow: #e0e0e0 1px 1px 0;
+    border-radius: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(128, 32, 0, 0.148);
+    cursor: pointer;
+    /* position: absolute; */
+    bottom: 0;
+    left: 50%;
+    /* transform: translateX(-50%); */
+    margin-bottom: 20px;
+    /* width: calc(100% - 40px); */
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+#btn-description-container{
+    display: none;
+}
+
+.btn-description-container{
+    display: flex;
+    width: 720px;
+    justify-content: space-evenly;
+}
+
+.btn-description-container div{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.btn-description-container p{
+    color: rgba(128, 32, 0, 0.8);
+}
+
+.text{
+    letter-spacing: 2px;
+}
+
+.btn-keyboard{
+    border: 2px solid rgba(128, 32, 0, 0.8);color: rgba(128, 32, 0, 0.8);
+    background-color: antiquewhite;
+    border-radius: 10px;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.start-screen a{
+    cursor: pointer;
+    bottom: 0;
+    margin: 0;
+    max-width: 300px;
+    letter-spacing: 1.5px;
+    color: rgba(128, 32, 0, 0.8);
+    text-decoration: none;
+}
+
+.impressum-ds{
+    display: flex;
+    gap: 16px;
+}
+
+.start-screen a:hover{
+    color: rgb(114, 29, 0);
+}
+
+.btn:hover{
+    background-color: rgba(128, 32, 0, 0.289);
+}
+
+.btns-top button{
+    border: 2px solid rgba(128, 32, 0, 0.8);
+    background-color: rgba(250, 235, 215, 0.771) !important;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.btn-container-left{
+    display: flex;
+}
+
+#btn-sound{
+    display: none;
+}
+
+.btn-container-left button{
+    border: 2px solid rgba(128, 32, 0, 0.8);
+    background-color: rgba(250, 235, 215, 0.771) !important;
+    border-radius: 100px;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 8px;
+    background-color: transparent;
+}
+
+.impressum{
+    width: 100%;
+    height: 100%;
+    top: 0;
+    margin: 0;
+    position: absolute;
+}
+
+.impressum div{
+    font-family: Arial, Helvetica, sans-serif;
+    margin-left: 100px;
+    padding-bottom: 24px;
+}
+
+.datenschutz{
+    overflow: scroll;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    position: absolute;
+}
+
+.datenschutz div{
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 24px;
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+#turn-device{
+    position: absolute;
+    z-index: 1;
+    border: 2px solid rgba(128, 32, 0, 0.8);
+    color: rgba(128, 32, 0, 0.8);
+    font-size: 32px;
+    background-color: rgb(248, 227, 190);
+    padding: 8px;
+    border-radius: 8px;
+    display: none;
+}
+
+@media only screen and (max-width: 1050px){
+
+    .btn-container{
+        display: flex;
+    }
+
+}
+
+@media only screen and (max-width: 720px){
+    canvas{
+        width: 100%;
+    }
+
+    .btn-container{
+        width: 100%;
+        padding: 4px;
+        display: flex;
+    }
+    
+    .btn-container-left button{
+        height: 30px;
+        width: 30px;
+        margin: 4px;
+    }
+
+    .start-screen {
+        width: 100%;
+        flex-direction: column;
+        justify-content: flex-end;
+    }
+
+    .impressum div, h2{
+        margin: 32px;
+    }
+
+    #btn-description-container{
+        display: none !important;
+    }
+
+    #turn-device{
+        display: block;
+    }
+
+    .btn{
+        display: none;
+    }
+
+}
+
+@media only screen and (max-height: 480px) {
+    canvas {
+        height: 100vh;
+    }
+
+    h1 {
+        display: none;
+    }
+
+    .btn-container {
+        width: 100%;
+        padding: 4px;
+        display: flex;
+    }
+    
+    .btn-container-left button {
+        height: 30px;
+        width: 30px;
+        margin: 4px;
+    }
+
+    .start-screen {
+        height: 100vh;
+        position: relative;
+        overflow: hidden;
+    }
+
+    #btn-description-container{
+        display: none !important;
+    }
+
+    .navi{
+        flex-direction: column-reverse;
+        bottom: 0;
+        height: 100%;
+        justify-content: space-between;
+    }
+
+    #turn-device{
+        display: none;
+    }
+
+    .btn{
+        display: flex;
+    }
+}
